@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VSS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 20px 30px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #0066cc;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+    }
+    nav a:hover {
+      background: #004080;
+    }
+    .hero {
+      background: url("file:///C:/Users/PYTHON/Desktop/website%20vss/PXL_20250829_135513279.MP.jpg") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #004080;
+      font-size: 2em;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .contact-form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    .contact-form button {
+      background: #004080;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      width: 100%;
+    }
+    .contact-form button:hover {
+      background: #0066cc;
+    }
+    .map {
+      margin-top: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 15px;
+      }
+      .hero h1 {
+        font-size: 2em;
+      }
+      .hero p {
+        font-size: 1em;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.2);
+      }
+      .section {
+        padding: 30px 15px;
+      }
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      .section h2 {
+        font-size: 1.5em;
+      }
+      .hero {
+        padding: 40px 10px;
+      }
+      .hero h1 {
+        font-size: 1.6em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VINGUNGUTI SECONDARY SCHOOL</h1>
+    <p>OUR SCHOOL MOTTO IS EDUCATION  PRAY  AND  WORK</p>
+  </header>
+
+  <nav>
+    <a href="file:///C:/Users/PYTHON/Desktop/website%20vss/home.html">Home</a>
+    <a href="file:///C:/Users/PYTHON/Desktop/website%20vss/About%20Us.html">About Us</a>
+    <a href="file:///C:/Users/PYTHON/Desktop/website%20vss/Academics.html">Academics</a>
+    <a href="file:///C:/Users/PYTHON/Desktop/website%20vss/Admissions.html">Admissions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <marquee><h1>Welcome to Our School  Where Education Meets Excellence</h1></marquee>
+   
+  </div>
+
+  <section class="section">
+    <h2>Our Programs</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Orientation Course</h3>
+        <p>Strong foundation for lifelong learning for form one students.</p>
+      </div>
+      <div class="card">
+        <h3>Secondary Education</h3>
+        <p>Preparing students for higher education and life.</p>
+      </div>
+      <div class="card">
+        <h3>Extracurricular</h3>
+        <p>Sports, Music, Arts, and Leadership programs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form action="#" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4423538910018!2d39.26950911588747!3d-6.822635395070039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c59a7f0b11d53%3A0x1c54ab61b2f334c7!2sDar%20es%20Salaam%20University!5e0!3m2!1sen!2stz!4v1700000000000"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vingunguti Secondary School | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
